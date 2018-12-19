@@ -8,16 +8,16 @@
 
 # We're going to be taking advantage of two built-in tools here, OrderDict and Enum
 
-In [11]:
+# In [11]:
 from enum import Enum  
 
 class State(Enum):
     unvisited = 1 #White
     visited = 2 #Black
     visiting = 3 #Gray
-Now for the Node class we will take advantage of the OrderedDict object in case we want to keep trak of the order keys are added to the dictionary.
+# Now for the Node class we will take advantage of the OrderedDict object in case we want to keep trak of the order keys are added to the dictionary.
 
-In [12]:
+# In [12]:
 from collections import OrderedDict
 
 class Node:
@@ -31,7 +31,7 @@ class Node:
         return str(self.num)
 Then finally the Graph:
 
-In [13]:
+# In [13]:
 class Graph:
 
     def __init__(self):
@@ -48,11 +48,11 @@ class Graph:
         if dest not in self.nodes:
             self.add_node(dest)
         self.nodes[source].adjacent[self.nodes[dest]] = weight
-In [14]:
-g = Graph()
-g.add_edge(0, 1, 5)
-In [15]:
-g.nodes
-Out[15]:
-OrderedDict([(0, <__main__.Node instance at 0x103a761b8>),
-             (1, <__main__.Node instance at 0x104dfef80>)])
+# In [14]:
+# g = Graph()
+# g.add_edge(0, 1, 5)
+# In [15]:
+# g.nodes
+# Out[15]:
+# OrderedDict([(0, <__main__.Node instance at 0x103a761b8>),
+#              (1, <__main__.Node instance at 0x104dfef80>)])
