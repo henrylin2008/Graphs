@@ -43,3 +43,21 @@ def dfs(graph, start, visited=None):
 # dfs(graph, 'A')
 # Out[12]:
 # {'A', 'B', 'C', 'D', 'E', 'F'}
+
+# Paths
+# We are able to tweak both of the previous implementations to return all possible paths between a start and goal vertex. The implementation below uses the stack data-structure again to iteratively solve the problem, yielding each possible path when we locate the goal. Using a generator allows the user to only compute the desired amount of alternative paths.
+
+# In [11]:
+def dfs_paths(graph, start, goal):
+    stack = [(start, [start])]
+    while stack:
+        (vertex, path) = stack.pop()
+        for nxt in graph[vertex] - set(path):
+            if nxt == goal:
+                yield path + [nxt]
+            else:
+                stack.append((nxt, path + [nxt]))
+
+# list(dfs_paths(graph, 'A', 'F'))
+# Out[11]:
+# [['A', 'B', 'E', 'F'], ['A', 'C', 'F']]
