@@ -72,3 +72,49 @@ class Graph:
         return iter(self.vertList.values())
 
 
+# Let's see a simple example of how to use this:
+
+# In [5]:
+# g = Graph()
+# for i in range(6):
+#     g.addVertex(i)
+# In [6]:
+# g.vertList
+# Out[6]:
+# {0: <__main__.Vertex instance at 0x10476b680>,
+#  1: <__main__.Vertex instance at 0x104cce5f0>,
+#  2: <__main__.Vertex instance at 0x10395d950>,
+#  3: <__main__.Vertex instance at 0x1039c00e0>,
+#  4: <__main__.Vertex instance at 0x1039c4e60>,
+#  5: <__main__.Vertex instance at 0x1039c45f0>}
+# In [7]:
+# g.addEdge(0,1,2)
+# In [12]:
+# for vertex in g:
+#     print vertex
+#     print vertex.getConnections()
+#     print '\n'
+# 0 connectedTo: [1]
+# [<__main__.Vertex instance at 0x104cce5f0>]
+
+
+# 1 connectedTo: []
+# []
+
+
+# 2 connectedTo: []
+# []
+
+
+# 3 connectedTo: []
+# []
+
+
+# 4 connectedTo: []
+# []
+
+
+# 5 connectedTo: []
+# []
+
+
