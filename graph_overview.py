@@ -29,7 +29,7 @@ class Node:
 
     def __str__(self):
         return str(self.num)
-Then finally the Graph:
+# Then finally the Graph:
 
 # In [13]:
 class Graph:
