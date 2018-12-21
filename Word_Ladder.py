@@ -1,3 +1,5 @@
+# Below is the Vertex and Graph class used for the Word Ladder example code:
+
 class Vertex:
     def __init__(self,key):
         self.id = key
@@ -52,6 +54,9 @@ class Graph:
 
     def __iter__(self):
         return iter(self.vertList.values())
+
+# Code for buildGraph function:
+
 
 
 def buildGraph(wordFile):
