@@ -1,3 +1,6 @@
+# For this problem, implement a DFS Algorithm! You can assume that the graph is in the simplified form:
+
+
 graph = {'A': set(['B', 'C']),
          'B': set(['A', 'D', 'E']),
          'C': set(['A', 'F']),
