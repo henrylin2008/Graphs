@@ -43,6 +43,7 @@ class Graph:
         return cadidates
         
     def paint(self):
+<<<<<<< HEAD
         print(self.connections)
 
 
@@ -78,3 +79,6 @@ s = set([1,2,3])
 s
 # Out[11]:
 {1, 2, 3}
+=======
+        print(self.connections)
+>>>>>>> 180cc8b151e6f60852620b563916bedf1f7b2921
